@@ -1,0 +1,16 @@
+\subsection{MLP}\label{subsubsec4}
+As the most typical neural network, the multilayer perceptron (MLP) has a simple and regular structure and can fit any continuous function when the hidden layer design is sufficiently perfect. Our group used the MLPClassifier to clarify, The MLPClassifier class implements a Multilayer Perceptron (MLP) algorithm trained using Backpropagation.[4] The MLP is trained on two arrays: an array X of size (n_samples, n_features) that holds the training samples represented by floating-point feature vectors.[5] Through normalization, the features between different dimensions are numerically comparable to a certain extent, which can greatly improve the accuracy of the classifier.[6]
+
+MLP parameter selection was carried out using GridSearchCV.[7]
+The parameters are hidden_layer_sizes，alpha，learning_rate，max_iter. MLP commonly uses the backpropagation algorithm to find MLP parameters, it may be limited to local optimums. [8]
+
+\textit{\textbf{reference}}
+[1]Syrine Ben Driss, Mahmoud Soua, Rostom Kachouri, Mohamed Akil. A comparison study between MLP and Convolutional Neural Network models for character recognition. SPIE Conference on Real- Time Image and Video Processing, Apr 2017, Anaheim, CA, United States. 10.1117/12.2262589 . 
+hal-01525504 
+[2]Chow and Yee, 1991 M. Chow, S.O. Yee Application of neural networks to incipient fault detection in induction motors
+[3]Journal of Neural Network Computing, 2 (3) (1991), pp. 26-32 Ilonen and Kamarainen, 2005 J. Ilonen, J.-K. Kamarainen Diagnosis tool for motor condition monitoring IEEE Transactions on Industry Applications, 41 (4) (2005), pp. 963-971
+[4]B.C. Pak, Y.I. Cho Hydrodynamic and heat transfer study of dispersed fluids with submicron metallic oxide particles Exp. Heat Transf. Int. J., 11 (1998), pp. 151-170
+[5]C. Nguyen, F. Desgranges, G. Roy, N. Galanis, T. Mare, S. Boucher, et al.Temperature and particle-size dependent viscosity data for water-based nanofluids–hysteresis phenomenon Int. J. Heat Fluid Flow, 28 (2007), pp. 1492-1506
+[6]I.M. Krieger, T.J. Dougherty A mechanism for non-Newtonian flow in suspensions of rigid spheres Trans. Soc. Rheol., 3 (1959), pp. 137-152
+[7]F. Yousefi, H. Karimi, M.M. Papari Modeling viscosity of nanofluids using diffusional neural networks J. Mol. Liq., 175 (2012), pp. 85-90
+[8]R. Gilmont Liquid viscosity correlations for flowmeter calculations Chem. Eng. Prog., 98 (2002), pp. 36-41

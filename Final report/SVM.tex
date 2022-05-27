@@ -1,0 +1,15 @@
+\subsection{SVM}\label{subsubsec4}
+The support vector(SVM) method for regression is formulated in solving a convex optimization problem, more specifically a quadratic programming(QP) problem.[1] We need to train the SVM classifier(a classification model was built with libsvm), then is divided it into a training set and testing set and calculate the accuracy of svc classifier and draw an image. Determining the range of coordinate axes. X and Y axes respectively represent two features (will use mgrid() function). Through SVM, we could understand how these factors influence ‘readiness’, which will help us to complete our target. In practice, training an SVM on the entire data set is slow and the extension of SVM to multiple classes is not as natural as NN. However, in the neighborhood of a small number of examples and a small number of classes, SVMs often perform better than other classification methods.[3]
+
+Our group used the SVM method designed to choose an appropriate kernel for the given application, There are standard options, such as Gaussian kernels or polynomials are the default options[4], but if these options are unsuccessful or the input is a discrete structure, a finer kernel is required[5]. So our group chose the RBF kernel, it’s easier to have a more accurate value. Regarding the question of normalization， our group uses the zero-mean normalization method of normalization, this method works well in cases when we do not know the actual minimum and maximum of our input data or when we have outliers that have a great effect on the range of the data.[6]
+
+SVM parameter selection was carried out using GridSearchCV.
+The parameters are C, gamma, and kernel. As C SVC may select all training points on the margin, which are better able to deploy, and as kernel, If the set value of C is less than the SVC will consume the edge.
+
+\textit{\textbf{reference}}
+[1]Haifeng Wang and Dejin Hu, "Comparison of SVM and LS-SVM for Regression," 2005 International Conference on Neural Networks and Brain, 2005, pp. 279-283, doi: 10.1109/ICNNB.2005.1614615.
+[2]J. Peng, B. Bhanu and S. Qing, "Probabilistic feature relevance learning for content-based image retrieval", Computer Vision and Image Understanding, vol. 75, pp. 150-164, 1999.
+[3]Y. Rui, T. S. Huang, M. Ortega and S. Mehrotra, "Relevance Feedback: A Power Tool in Interactive Content-Based Image Retrieval", IEEE Tran on Circuits and Systems for Video Technology, vol. 8, no. 5, pp. 644-655, Sept. 1998.
+[4]Burges C., “A tutorial on support vector machines for pattern recognition”, In “Data Mining and Knowledge Discovery”. Kluwer Academic Publishers, Boston, 1998, (Volume 2). 
+[5]Osuna E., Freund R., and Girosi F., “Support Vector Machines: Training and Applications”, A.I. Memo No. 1602, Artificial Intelligence Laboratory, MIT, 1997.
+[6]S. Mukkamala,G. Janoski, A H Sung, “Intrusion detection using neural networks and support vector machines,” Proceedings of IEEE International Joint Conference on Neural Networks(IJCNN 02), IEEE Computer Society Press, pp.1702-170,2002.
