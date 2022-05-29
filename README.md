@@ -1,7 +1,7 @@
 # Daily Readiness Score Prediction
 
 ### Datamining FSS2022 Team6
-
+In this paper, we explored classification methods and tried to find the best one among them for predicting a readiness value of a person, which represents him/her/their willingness to do sports for the upcoming day.
 ### Introduction
 Life-logging is an activity that helps people monitor their activity to maintain a healthier lifestyle. Most life log data is stored privately, so individuals cannot easily access it. As a result of the efforts of Thambawati et al (2020), various analyses of this data have become possible. Taking this opportunity, we would like to predict how 'prepared' one will be for the day ahead.
 ### Data
