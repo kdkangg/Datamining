@@ -1,4 +1,4 @@
-# Daily Readiness score prediction with Health data 
+# Daily Readiness Score Prediction
 
 ### Datamining FS2022 Team6
 As interest in healthy lifestyles has increased, gadgets and apps for storing health have become more popular. Wearing a smartwatch or fitness tracker to digitally record your life is a common way to do this. Life-logging is an activity that helps people monitor their activity to maintain a healthier lifestyle. Most life log data is stored privately, so individuals cannot easily access it. As a result of the efforts of Thambawati et al (2020), various analyses of this data have become possible.
