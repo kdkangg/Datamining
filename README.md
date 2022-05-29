@@ -1,6 +1,6 @@
 # Daily Readiness Score Prediction
 
-### Datamining FS2022 Team6
+### Datamining FSS2022 Team6
 
 ### Introduction
 Life-logging is an activity that helps people monitor their activity to maintain a healthier lifestyle. Most life log data is stored privately, so individuals cannot easily access it. As a result of the efforts of Thambawati et al (2020), various analyses of this data have become possible. Taking this opportunity, we would like to predict how 'prepared' one will be for the day ahead.
