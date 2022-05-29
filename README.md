@@ -7,6 +7,7 @@ Taking this opportunity, we would like to predict how 'prepared' people will be 
 Life-logging is an activity that helps people monitor their activity to maintain a healthier lifestyle. Most life log data is stored privately, so individuals cannot easily access it. As a result of the efforts of Thambawati et al (2020), various analyses of this data have become possible. Taking this opportunity, we would like to predict how 'prepared' one will be for the day ahead.
 ### Data
 Thambawita et al. provided the dataset explored in this article. Fitbit Versa 2 smartwatch wristband, PMSys sports logging application, and Google form for individual data reporting are used to collect traditional lifelogging data and sports activity logging data. The data were collected over a period of five months (November 2019 to March 2020) and contains information from 16 participants (13 men and 3 women) ranging in age from 25 to 60. Participants vary in their background regarding exercise, ranging from someone who rarely exercises to an active athlete.
+URL:https://www.kaggle.com/datasets/vlbthambawita/pmdata-a-sports-logging-dataset
 ![image](https://github.com/kdkangg/Datamining/blob/main/structure.png)
 ### Different section
 1. agg_Xtrain.csv, agg_ytrain.csv, agg_Xtest.csv, agg_ytest.csv are train,test set aggregated from all participants.
