@@ -1,0 +1,29 @@
+
+\section{Preprocessing and Mining}
+\subsection{Data preprocessing}
+Before applying classification algorithms to the data set in order to predict readiness scores for participants, we have completed a data preprocessing. The preprocessing part has contained the following steps:
+\begin{enumerate}
+    \item Since the explored data set consists of several tables for each participant, in the first step we have checked which tables are relevant for our task and which of them are not, then we have dropped irrelevant ones. Moreover, due to the incompleteness of the data for 12 and 13 participants, we have eliminated their data.
+    \item In the second step, we have found out which attributes are appropriate for predicting the readiness scores and are contained in all participants' data. Therefore, we have dropped the following data: heart rate, exercise, reporting from google forms, injury and spre.
+    \item In the next step, we have dealt with missing data. For some attributes we have replaced 0 values with NaN: calories, distance, lightly active minutes, resting heart rate, and steps (the reason: to explore such cases separately, because these attributes cannot be equal to 0); for the following attributes we have replaced missing values to the mean of a column: distance, resting heart rate, lightly active minutes, sedentary minutes, sleep composition score, sleep revitalization score, sleep duration score, deep sleep in minutes, sleep resting heart rate, sleep restlessness, sleep duration, sleep minutes asleep, sleep minutes awake, sleep time in bed, sleep efficiency and heart rate below zone1; we have dropped the rows with missing values and 0 values in a column readiness.
+    \item In the fourth step, we have normalized the data set by using MinMaxScaler().
+    \item The next step is splitting data into training and testing sets to apply KNN. We have split the original data set in a ratio of 75\% to 25\% for each participant, respectively. After this step, we have used KNN-method for training data and for filling the rest missing values in training and testing sets.
+    \item In the sixth step, we have aggregated the data sets and added new columns which represent the days of the week in order to find out the impact of these values on readiness prediction scores.
+    \item In the seventh step, we have split the data into training and testing sets according to the previous rule (75\% to 25\%). After that, we have aggregated the data from all participants.
+    \item In the last step, we have scaled the following attributes - age and height across all participants and then used SMOTE() to deal with oversampling.
+\end{enumerate}
+\subsection{Data mining}
+In order to predict the readiness scores for the participants which are in the range from 0 to 10, we have applied several classification methods.
+
+
+\input{3.2.hyperparam}
+\input{3.3.KNN}
+\input{3.4.Decisiontree}
+
+\subsubsection{Decision Tree}
+\paragraph{Approach.}
+Decision Tree is a method that is used widely due to the simplicity of its interpretation and application. Moreover, this classification method doesn't require a significant data preparation which highlights it among other methods. However, before the method application, we have searched the best combination of hyperparameters for it by using Grid Search with Cross Validation. Despite its 
+
+\input{3.5.MLP}
+\input{3.6.Random forest}
+\input{4.Result}
